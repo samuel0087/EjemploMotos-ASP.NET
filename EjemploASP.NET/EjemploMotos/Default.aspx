@@ -17,7 +17,7 @@
                     </Columns>
                 </asp:GridView>
 
-                <a href="#" class="btn btn-primary">Agregar</a>
+                <a href="formMoto" class="btn btn-primary">Agregar</a>
             </div>
             <div class="col"></div>
         </div>

@@ -30,16 +30,25 @@
             </div>
 
             <div class="mb-3">
-                <label for="txtDescripcion" class="form-label">Descripcion</label>
-                <asp:TextBox ID="TextBox1" CssClass="form-control" TextMode="MultiLine" runat="server" />
+                <label for="txtFecha" class="form-label">Fecha Fabricacion</label>
+                <asp:TextBox ID="txtFecha" CssClass="form-control" TextMode="Date" runat="server" />
             </div>
 
-<!--
-        public string Color { get; set; }
-        public string FechaFabricacion { get; set; }
-        public bool Usado {  get; set; }
-        public bool Importado { get; set; }
-    }--%>
+            <div class="mb-3">
+                <asp:CheckBox ID="chkUsado" Text="" runat="server" />
+                <label for="chkUsado" class="form-label">Usado</label>
+            </div>
+
+            <div class="mb-3">
+                <asp:CheckBox ID="chkImportado" Text="" runat="server" />
+                <label for="chkImportado" class="form-label">Importado</label>
+            </div>
+
+            <div class="mb-3">
+                <asp:Button Text="Aceptar" ID="btnAceptar" CssClass="btn btn-primary" runat="server" OnClick="btnAceptar_Click"/>
+                <a href="Default" class="btn btn-danger">Cancelar</a>
+            </div>
+
         </div>
     </div>
 
