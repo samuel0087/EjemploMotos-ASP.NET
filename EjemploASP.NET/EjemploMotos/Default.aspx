@@ -7,13 +7,14 @@
         <div class="row">
             <div class="col"></div>
             <div class="col-6">
-                <asp:GridView ID="dgvMotos" AutoGenerateColumns="false" CssClass="table table-dark table-striped " runat="server">
+                <asp:GridView ID="dgvMotos" AutoGenerateColumns="false" CssClass="table table-dark table-striped " DataKeyNames="IdMoto" OnSelectedIndexChanged="dgvMotos_SelectedIndexChanged" runat="server">
                     <Columns>
                         <asp:BoundField DataField="Marca" HeaderText="Marca" />
                         <asp:BoundField DataField="Modelo" HeaderText="Modelo" />
                         <asp:BoundField DataField="Color" HeaderText="Color" />
                         <asp:CheckBoxField DataField="Usado" HeaderText="Usado" />
                         <asp:CheckBoxField DataField="Importado" HeaderText="Importado" />
+                        <asp:CommandField ShowSelectButton="true" HeaderText="Seleccionar" />
                     </Columns>
                 </asp:GridView>
 

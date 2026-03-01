@@ -22,5 +22,11 @@ namespace EjemploMotos
             dgvMotos.DataBind();
 
         }
+
+        protected void dgvMotos_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            string id = dgvMotos.SelectedDataKey.Value.ToString();
+            Response.Redirect("formMoto?id=" + id);
+        }
     }
 }
